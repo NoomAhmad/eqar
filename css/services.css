@@ -36,21 +36,21 @@ body {
 }
 
 .features{
-	list-style: none;
-	text-align: center;
-	color: rgb(138, 138, 138);
-	margin: 0;
+  list-style: none;
+  text-align: center;
+  color: rgb(138, 138, 138);
+  margin: 0;
   padding: 0;
   font-size: 18px;
 }
 .features li{
-	margin: 0 35px;
-	padding: 20px 15px;
+  margin: 0 35px;
+  text-algin: center;
   width: 200px;
   border: 1px solid rgb(242, 242, 242);
-	border-top: 0;
-	border-left: 0;
-	border-right: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 button{
