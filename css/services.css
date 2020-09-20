@@ -131,9 +131,9 @@ button a{
   font-size: 16px;
 }
 .features li{
-	margin: 0 35px;
-	padding: 20px 15px;
-  width: 80%;
+   margin: 0 35px;
+   width: 80%;
+   text-algin: center;
 }
 
 button{
