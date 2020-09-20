@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: 'Tajawal', sans-serif;
   display:flex; 
-
+  flex-direction:column;
 }
 
 /*aimation*/
