@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>الدليل الأمثل العقاري | نبذة عن الشركة</title>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <!--menu-->
+    <div class="menu" id="mynav">
+        <i class="logo" id="mylogo"><img src=""></i>
+        <a href="index.html" class="active">الصفحة الرئيسية</a>
+        <a href="about.html">نبذه عن الشركة</a>
+        <a href="services.html">الخدمات</a>
+        <a href="eqars.html">العقارات المتاحة</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="javascript:void(0);" class="icon" onclick="Menuphone()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#" class="login" onclick="document.getElementById('loginWrapper').style.display='flex'" >تسجيل دخول</a>
+    </div>
+
+    <!--Login page-->
+    <div id="loginWrapper" class="wrapper fadeInDown">
+        <div id="formContent">
+            <h2>تسجيل الدخول</h2>
+            <form method="POST" action="./dashboard.html" >
+                <span  onclick="document.getElementById('loginWrapper').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <input type="email" id="login" class="fadeIn second" name="login" placeholder="الإيميل">
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="كلمة المرور">
+                <input type="submit" class="fadeIn fourth" value="تسجيل الدخول">
+            </form>
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">نسيت الرقم السري؟</a>
+            </div>   
+        </div>
+    </div>
+
+    <!--Message-->
+    <div class="message">
+
+    </div>
+    <!--vession-->
+    <div class="vession">
+        
+    </div>
+
+    <!--Gools-->
+    <div class="gools">
+        
+    </div>
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <a href="https://www.facebook.com/DalilAmthal/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/dalilamthal" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://t.me/dalilamthal" class="fa fa-telegram" target="_blank"></a>
+        <a href="https://www.instagram.com/dalilamthal" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://www.snapchat.com/add/dalilamthal" class="fa fa-snapchat" target="_blank"></a>
+        <a href="https://wa.me/00966595841441" class="fa fa-whatsapp" target="_blank"></a>
+         
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+           <a href="https://www.twitter.com/noom_pc" target="_blank">noom_pc</a>
+        </p>      
+    </div>
+
+<script src="js/main.js"></script>  
+</body>
+</html>

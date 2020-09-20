@@ -1,0 +1,540 @@
+*{
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  display:flex; 
+
+}
+
+/*aimation*/
+.area{
+  width: 100%; 
+}
+
+.circles{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 2s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 2s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+}
+
+
+/*sginup*/
+.banner{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #71839B;
+  font-family: 'Tajawal', sans-serif;
+  width: 100%;
+}
+
+.banner p{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.banner button{
+  background-color:indianred;
+  border: none;
+  color: white;
+  padding: 12px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 20px 0px 0px 2px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Tajawal', sans-serif;
+  cursor: pointer;
+}
+
+.banner button:hover{
+  background-color: #354E71;
+}
+
+.banner a{
+  text-decoration: none;
+  color: white;
+}
+
+.sginup {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+  position: absolute;
+  display: none;
+  
+}
+
+
+.sginup a {
+  color: indianred;
+  display:inline-block;
+  text-decoration: none;
+}
+
+.sginup h2 {
+  text-align: center;
+  font-size: 18px;
+  display:inline-block;
+  margin: 37px 0px 0px 0px; 
+  color:#354E71;
+  font-family: 'Tajawal', sans-serif;
+}
+
+#Contentform {
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+
+#Footerform {
+  padding:25px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 16px;
+}
+
+
+.sginup input[type=submit]{
+  background-color: #354E71;
+  border: none;
+  color: white;
+  padding: 12px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 20px 0px 0px 2px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Tajawal', sans-serif;
+  cursor: pointer;
+}
+
+.sginup input[type=submit]:hover {
+  background-color: #495F7F;
+}
+
+.sginup input[type=submit]:active{
+  transform: scale(0.95);
+}
+
+.sginup input[type=email], input[type=password]{
+  background-color: #f6f6f6;
+  border: none;
+  color: #354E71;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px 5px 5px 5px;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.sginup input[type=email], input[type=password]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #354E71;
+}
+
+.sginup input[type=email], input[type=password]:placeholder {
+  color: #cccccc;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #354E71;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color:indianred;
+  cursor: pointer;
+}
+
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color:#354E71;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color:indianred;
+  cursor: pointer;
+}
+
+.underlineHover:hover:after{
+  width: 100%;
+}
+
+
+*:focus {
+    outline: none;
+} 
+
+
+/*contact*/
+
+.allContact{
+  height: 1000px;
+  width: 100%;
+}
+
+.contact{
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+
+}
+
+iframe{
+  width: 100%;
+  height: 500px;
+}
+
+
+.contact img{
+  height: 180px;
+  width: 180px;
+}
+
+.contact h4 {
+  color:#333;
+
+}
+.contact h3 {
+  color: #354E71;
+
+}
+
+
+.contact  span{
+  color: indianred;
+  padding: 8px;
+  font-size: 16px;
+  font-family: 'Arvo', serif;
+  text-align: center;
+}
+
+
+.contact .fa {
+  padding: 12px;
+  font-size: 22px;
+  text-decoration: none;
+  color:indianred;
+}
+
+.contact .fa:hover{
+  color: #354E71;
+}
+
+.contact span:hover{
+  color:#354E71;
+}
+
+
+@media (max-width:780px){
+
+  /*Email-sending*/
+  .banner p{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 40px;
+  }
+  
+  .banner button{
+    padding: 10px 60px;
+    font-size: 14px;
+  }
+  
+
+  .sginup {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    display: none;
+  }
+  
+  
+  .sginup h2 {
+    font-size: 16px;
+  }
+
+  #Contentform {
+    border-radius: 0px;
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 0px;
+    box-shadow: 0;
+    text-align: center;
+  }
+
+  .sginup input[type=submit]{
+    padding: 12px 60px;
+    font-size: 16px;
+  }
+  
+  .sginup input[type=email], input[type=password]{
+    padding: 15px 32px;
+    font-size: 16px;
+  }
+
+  .close {
+    font-size: 30px;
+  }
+
+  /*contact*/
+  
+.contact h4 {
+  font-size: 14px;
+
+}
+.contact h3 {
+  font-size: 16px;
+}
+
+.contact  span{
+  padding: 8px;
+  font-size: 14px;
+}
+
+.contact .fa {
+  font-size: 20px;
+}
+  
+  
+  /*animation*/
+  .circles li:nth-child(1){
+    width: 40px;
+    height: 30px;
+  }
+  
+  
+  .circles li:nth-child(2){
+    width: 20px;
+    height: 20px;
+  }
+  
+  .circles li:nth-child(3){
+    width: 20px;
+    height: 20px;
+  }
+  
+  .circles li:nth-child(4){
+    width: 40px;
+    height: 40px;
+  }
+  
+  .circles li:nth-child(5){
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+  }
+  
+  .circles li:nth-child(6){
+    width: 10px;
+    height: 10px;
+  }
+  
+  .circles li:nth-child(7){
+    width: 15px;
+    height: 15px;
+  }
+  
+  .circles li:nth-child(8){
+    width: 25px;
+    height: 25px;
+  }
+  
+  .circles li:nth-child(9){
+    width: 15px;
+    height: 15px;
+  }
+  
+  .circles li:nth-child(10){
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+ 
+    
+}
+
+
+ 
+
+  
+  
+

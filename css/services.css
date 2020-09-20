@@ -1,0 +1,145 @@
+*{
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  display:flex; 
+}
+
+/*services*/
+#serv{
+	width: 989px;
+	margin: 100px auto;
+  direction: rtl;
+}
+
+.serv_card{
+	width: 300px;
+	background: rgb(255, 255, 255);
+	display: inline-table;
+  top: 0;
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+  -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+.serv_card:not(:first-child){
+  margin-right: 40px;
+}
+
+
+.header{
+  color: rgb(255, 255, 255);
+  width: 300px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.features{
+	list-style: none;
+	text-align: center;
+	color: rgb(138, 138, 138);
+	margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.features li{
+	margin: 0 35px;
+	padding: 20px 15px;
+  width: 200px;
+  border: 1px solid rgb(242, 242, 242);
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+button{
+	color: rgb(255, 255, 255);
+	border: 0;
+	border-radius: 5px;
+	height: 40px;
+	width: 200px;
+	display: block;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+  margin: 20px auto 35px;
+  font-family: 'Tajawal', sans-serif;
+  cursor: pointer;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+}
+.alpha button{
+	background: #354E71;
+}
+.bravo button{
+	background:indianred;
+}
+.charlie button{
+	background:olive;
+}
+
+  
+.header .card_image {
+  width: inherit;
+  height: inherit
+}
+  
+.header .card_image img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+}
+  
+
+    
+@media (max-width: 900px) {
+
+/*services*/
+#serv{
+  width: 100%;
+  height: auto;
+	margin: 100px 0px;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.serv_card{
+  width: 70%;
+  margin: 30px 0px ;
+  display: inline-table;
+  top: 0;
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+  -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+.serv_card:not(:first-child){
+  margin-right: 0px;
+}
+
+
+.header{
+  width: 100%;
+}
+
+.features{
+  font-size: 16px;
+}
+.features li{
+	margin: 0 35px;
+	padding: 20px 15px;
+  width: 80%;
+}
+
+button{
+padding: 10px 30px ;
+font-size: 16px;
+}
+
+}
+  

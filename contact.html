@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>الدليل الأمثل العقاري | تواصل معنا</title>
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!--menu-->
+    <div class="menu" id="mynav">
+        <i class="logo" id="mylogo"><img src=""></i>
+        <a href="index.html" class="active">الصفحة الرئيسية</a>
+        <a href="about.html">نبذه عن الشركة</a>
+        <a href="services.html">الخدمات</a>
+        <a href="eqars.html">العقارات المتاحة</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="javascript:void(0);" class="icon" onclick="Menuphone()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#" class="login" onclick="document.getElementById('loginWrapper').style.display='flex'" >تسجيل دخول</a>
+    </div>
+    
+    <!--Login page-->
+    <div id="loginWrapper" class="wrapper fadeInDown">
+        <div id="formContent">
+            <h2>تسجيل الدخول</h2>
+            <form method="POST" action="./dashboard.html" >
+                <span  onclick="document.getElementById('loginWrapper').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <input type="email" id="login" class="fadeIn second" name="login" placeholder="الإيميل">
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="كلمة المرور">
+                <input type="submit" class="fadeIn fourth" value="تسجيل الدخول">
+            </form>
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#" >نسيت الرقم السري؟</a>
+            </div>   
+        </div>
+    </div>
+
+    
+    <div class="banner">
+        <p>في حال لديك عقار تريد نشره للبيع أو للتأجير..أفتح حساب جديد حتى تتمكن من النشر</p>
+          <button><a href="#"  onclick="document.getElementById('sginup').style.display='flex'" >حساب جديد</a></button>
+    </div>
+
+  <!--Sginup-->
+  <div id="sginup" class="sginup fadeInDown">
+    <div id="Contentform">
+      <h2>إنشاء حساب</h2>
+      <span  onclick="document.getElementById('sginup').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form method="POST" action="./dashboard.html" >
+        <input type="email" name="mail" class="fadeIn " placeholder="الإيميل">
+        <input type="password" id="password" class="fadeIn " name="login" placeholder="كلمة المرور">
+        <input type="password" id="Cpassword" class="fadeIn " name="login" placeholder=" تأكيد كلمة المرور">
+        <input type="submit" class="fadeIn fourth" value="تسجيل الدخول">
+      </form>
+      <!-- Remind Passowrd -->
+      <div id="Footerform">
+        <a class="underlineHover" onclick="replaceForm()">قمت بإنشاء حساب من قبل</a>
+      </div>   
+    </div>
+  </div>
+
+    
+    <div class="allContact">
+        <div class="contact">
+           <img src="img/avatar.png">
+           <h3>أ.حمزة حسن الشريف</h3>
+           <h4>للتواصل أو للاستشارة <br/>
+            <a href="https://wa.me/00966595841441" class="fa fa-whatsapp" target="_blank"><span>0595841441</span></a></h4> 
+        </div>
+        
+        <div class="contact" >
+            <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=800&amp;height=500&amp;hl=en&amp;q=%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%A7%D9%85%D8%AB%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%8C%20Medina%20Saudi%20Arabia%20Madinah+(%20%D9%85%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%A7%D9%85%D8%AB%D9%84%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.symptoma.ae/ar/info/covid-19#info'>COVID</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=bf1246fee9fed3fd451773ad3a58fb64ba26c748'></script>
+        </div>
+    </div>
+
+   <!--footer-->
+    <div class="footer">
+        <a href="https://www.facebook.com/DalilAmthal/" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://twitter.com/dalilamthal" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://t.me/dalilamthal" class="fa fa-telegram" target="_blank"></a>
+        <a href="https://www.instagram.com/dalilamthal" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://www.snapchat.com/add/dalilamthal" class="fa fa-snapchat" target="_blank"></a>
+        <a href="https://wa.me/00966595841441" class="fa fa-whatsapp" target="_blank"></a>
+         
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+           <a href="https://www.twitter.com/noom_pc" target="_blank">noom_pc</a>
+        </p>      
+    </div>
+        
+        <!--animation-->
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+     </div>
+    
+    <script>
+        // Get the modal
+        var modal = document.getElementById('sginup');
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == model) {
+            model.style.display = "none";
+            }
+        }
+    </script>  
+
+    <script>
+        function replaceForm(){
+            document.getElementById('loginWrapper').style.display = "flex";
+            document.getElementById('sginup').style.display = "none";
+            }
+    </script>
+
+<script src="js/main.js"></script>
+   
+</body>
+</html>

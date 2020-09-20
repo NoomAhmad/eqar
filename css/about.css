@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+  
+  body {
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+    display:flex; 
+    flex-direction:column;
+}
+
+/*Message*/
+.message{
+    height: 600px;
+}
+
+/*Vission*/
+.vession{
+    height: 600px;
+}
+
+/*Gools*/
+.gools{
+    height: 600px;
+}
